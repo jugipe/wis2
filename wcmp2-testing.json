@@ -1,0 +1,164 @@
+{
+    "id": "urn:wmo:md:eu-eumetnet-femdi:observations.gimmeyawallet",
+    "conformsTo": [
+        "http://wis.wmo.int/spec/wcmp/2/conf/core"
+    ],
+    "time": {
+        "interval": [
+            "2025-10-05T11:11:11Z",
+            ".."
+        ],
+        "resolution": "PT1H"
+    },
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -142,
+                    28
+                ],
+                [
+                    -142,
+                    82
+                ],
+                [
+                    -52,
+                    82
+                ],
+                [
+                    -52,
+                    28
+                ],
+                [
+                    -142,
+                    28
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "title": "Surface weather observations, YARRR",
+        "description": "Surface Observations measured at the automatic and manual stations of the Environment and Climate Change Canada and partners networks, either for a single station, or for the stations of specific provinces and territories (last 30 days)",
+        "themes": [
+            {
+                "concepts": [
+                    {
+                        "id": "Weather"
+                    },
+                    {
+                        "id": "Archives"
+                    },
+                    {
+                        "id": "Precipitation"
+                    },
+                    {
+                        "id": "Air temperature"
+                    },
+                    {
+                        "id": "Humidity"
+                    },
+                    {
+                        "id": "Snow"
+                    },
+                    {
+                        "id": "Wind"
+                    },
+                    {
+                        "id": "Meteorological data"
+                    },
+		    {
+                        "id": "Rum"
+                    }
+                ],
+                "scheme": "https://library-archives.canada.ca/eng/services/government-canada/controlled-vocabularies-government-canada/pages/controlled-vocabularies-government-canada.aspx"
+            },
+            {
+                "concepts": [
+                    {
+                        "id": "weather"
+                    }
+                ],
+                "scheme": "https://codes.wmo.int/wis/topic-hierarchy/earth-system-discipline"
+            }
+        ],
+        "contacts": [
+            {
+                "organization": "Free State of Kaleva",
+                "position": "National Inquiry Response Team",
+                "phones": [
+                    {
+                        "value": "+18199923423400"
+                    }
+                ],
+                "emails": [
+                    {
+                        "value": "kek@kaleva.fi"
+                    }
+                ],
+                "addresses": [
+                    {
+                        "deliveryPoint": [
+                            "Unknown"
+                        ],
+                        "city": "Fredericton",
+                        "administrativeArea": "NB",
+                        "postalCode": "E3B 6Z4",
+                        "country": "Canada"
+                    }
+                ],
+                "links": [
+                    {
+                        "rel": "canonical",
+                        "type": "text/html",
+                        "href": "https://example.org"
+                    }
+                ],
+                "contactInstructions": "via email",
+                "roles": [
+                    "host",
+                    "producer"
+                ]
+            }
+        ],
+        "type": "dataset",
+        "created": "2025-10-01T11:11:11Z",
+        "updated": "2025-10-06T16:41:00Z",
+        "wmo:dataPolicy": "core"
+    },
+    "links": [
+        {
+            "rel": "stations",
+            "href": "https://example.org/observations/doc/swob-xml_station_list.csv",
+            "type": "text/csv",
+            "title": "Stations associated with this dataset"
+        },
+        {
+            "rel": "data",
+            "href": "https://example.org/observations/swob-ml",
+            "type": "text/html",
+            "hreflang": "en",
+            "title": "Raw data download (CSV files)"
+        },
+        {
+            "rel": "items",
+            "href": "https://example.org/collections/swob-realtime/items",
+            "type": "application/json",
+            "title": "Data access API interface"
+        },
+        {
+            "rel": "related",
+            "href": "https://example.org/open-data/msc-data/obs_station/readme_obs_insitu_swobdatamart_en",
+            "type": "text/html",
+            "title": "Documentation"
+        },
+        {
+            "rel": "items",
+            "href": "mqtt://example.org:8883",
+            "channel": "origin/a/wis2/ca-eccc-msc/data/core/weather/experimental/surface-based-observations/synop",
+            "type": "application/json",
+            "title": "Data notifications"
+        }
+    ]
+}
